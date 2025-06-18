@@ -9,13 +9,12 @@
     <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0xaijjfFMhQp99m3bL/9zC07s+e+zL5b4eB1C5z/x7tD9lP6z0vF0y0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
         }
-        /* Custom styles for hero section if needed, though Tailwind handles much of it */
         .gradient-background {
             background: linear-gradient(to right, #003366, #0056b3);
         }
@@ -25,7 +24,7 @@
     </style>
     <script 
      src="https://www.paypal.com/sdk/js?client-id=BAAluzD7bq_O5OzB9ksLPSBHQfwin4Ex_G8S67wy_k0Y3R8T_PdxKiTTWM2C66VrbwFLkLRix8NUv6uogM&components=hosted-buttons&enable-funding=venmo&currency=USD">
-   </script>
+    </script>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -35,8 +34,7 @@
             <!-- Logo & Site Title -->
             <a href="#" class="flex items-center space-x-3 text-2xl font-extrabold tracking-tight rounded-md p-2">
                 <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white flex items-center justify-center shadow-md">
-                    <!-- Placeholder for logo, ideally replace with an SVG for better scaling -->
-                    <img src="affordablesites.png" class="rounded-full">
+                    <img src="affordablesites.png" class="rounded-full" alt="Affordable Sites USA Logo">
                 </div>
                 <span>Affordable Sites USA</span>
             </a>
@@ -139,11 +137,9 @@
         <section id="about" class="my-16 bg-white rounded-xl shadow-lg p-6 md:p-8 text-center">
             <h2 class="text-3xl font-bold text-gray-900 mb-6">About Affordable Sites USA</h2>
             <p class="text-lg text-gray-700 max-w-2xl mx-auto">
-                We help local businesses stand out online — without the burden of expensive ongoing fees for their core website. With years of experience building for contractors, trades, and service professionals, we understand what small businesses truly need: a website that works hard, loads fast, and consistently brings in new leads. Let’s get your business online, affordably and effectively!
+                We help local businesses stand out online — without the burden of expensive ongoing fees for their core website. With years of experience building for contractors, trades, and service professionals, we provide modern, effective, and affordable web solutions.
             </p>
-       
         </section>
-       
 
         <!-- Contact Section -->
         <section id="contact" class="my-16 bg-gray-800 text-white rounded-xl shadow-lg p-6 md:p-8">
@@ -155,18 +151,17 @@
                     <form action="https://formspree.io/f/mkgbzbwg" method="POST" class="space-y-6">
                         <div>
                             <label for="email" class="block text-lg font-medium text-white mb-2">Your Email:</label>
-                            <input type="email" id="email" name="email" class="w-full p-3 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 text-white" placeholder="your.email@example.com" required>
+                            <input type="email" id="email" name="email" class="w-full p-3 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 text-white" required>
                         </div>
                         <div>
                             <label for="message" class="block text-lg font-medium text-white mb-2">Your Message:</label>
-                            <textarea id="message" name="message" rows="5" class="w-full p-3 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 text-white" placeholder="Tell us about your project..." required></textarea>
+                            <textarea id="message" name="message" rows="5" class="w-full p-3 rounded-md bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-amber-500 text-white" required></textarea>
                         </div>
                         <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-lg">
                             Send Message
                         </button>
                     </form>
                 </div>
-
                 <!-- Contact Info & Calendly -->
                 <div class="lg:col-span-1 text-center lg:text-left">
                     <h3 class="text-2xl font-semibold text-amber-400 mb-6">Or Reach Us Directly</h3>
@@ -192,13 +187,14 @@
             </div>
         </section>
     </div>
-     <div id="paypal-container-V3GH5LXXY8A86" class="paypal-button-wrapper"></div>
-        <script>
-          paypal.HostedButtons({
-            hostedButtonId: "V3GH5LXXY8A86",
-          }).render("#paypal-container-V3GH5LXXY8A86")
-       </script>
-    
+
+    <!-- PayPal Button Section (centered) -->
+    <div id="paypal-container-V3GH5LXXY8A86" class="paypal-button-wrapper"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "V3GH5LXXY8A86",
+      }).render("#paypal-container-V3GH5LXXY8A86")
+    </script>
     <style>
         .paypal-button-wrapper {
           display: flex;
@@ -206,8 +202,8 @@
           margin-top: 30px; /* space above button */
           margin-bottom: 30px; /* space below button */
         }
-   </style>
-    
+    </style>
+
     <!-- Footer Section -->
     <footer class="bg-gray-950 text-gray-400 py-8 px-6 md:px-10 text-center">
         <div class="container mx-auto">
@@ -219,11 +215,8 @@
                 <a href="#contact" class="hover:text-amber-400 transition duration-300">Contact</a>
                 <a href="https://affordablesitesusa.com/termsofservice" class="hover:text-amber-400 transition duration-300">Terms Of Service</a>
                 <a href="https://affordablesitesusa.com/privatepolicy" class="hover:text-amber-400 transition duration-300">Private Policy</a>
-
-
             </nav>
         </div>
-         
     </footer>
 
     <script>
