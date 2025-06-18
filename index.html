@@ -192,13 +192,24 @@
             </div>
         </section>
     </div>
-     <div id="paypal-container-V3GH5LXXY8A86">
+     <div id="paypal-container-V3GH5LXXY8A86" class="paypal-button-wrapper">
+      <div id="paypal-button-container">
         <script>
           paypal.HostedButtons({
             hostedButtonId: "V3GH5LXXY8A86",
           }).render("#paypal-container-V3GH5LXXY8A86")
        </script>
+     </div>
     </div>
+    <style>
+        .paypal-button-wrapper {
+          display: flex;
+          justify-content: center;
+          margin-top: 30px; /* space above button */
+          margin-bottom: 30px; /* space below button */
+        }
+   </style>
+    
     <!-- Footer Section -->
     <footer class="bg-gray-950 text-gray-400 py-8 px-6 md:px-10 text-center">
         <div class="container mx-auto">
