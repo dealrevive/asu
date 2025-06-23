@@ -3,22 +3,21 @@
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTF6PT1BXS"></script>
-     <script>
+    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'G-CTF6PT1BXS');
     </script>
     <!-- Google Tag Manager -->
-<script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PRT4LXHT');
-</script>
-<!-- End Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PRT4LXHT');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Affordable Sites USA | No Monthly Fee Websites for Small Businesses</title>
@@ -29,42 +28,31 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-        }
-        .gradient-background {
-            background: linear-gradient(to right, #003366, #0056b3);
-        }
-        .hero-section {
-            background: linear-gradient(to right, #e0e6ed, #f0f4f7);
-        }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; }
+        .gradient-background { background: linear-gradient(to right, #003366, #0056b3); }
+        .hero-section { background: linear-gradient(to right, #e0e6ed, #f0f4f7); }
         #paypal-container-V3GH5LXXY8A86 > div {
           width: 100% !important;
-          min-width: 300px !important;  /* Try increasing this */
-          max-width: 400px;             /* Or set to 100% for full width */
+          min-width: 300px !important;
+          max-width: 400px;
           margin: 0 auto;
           display: flex;
           justify-content: center;
         }
         .video-responsive {
           position: relative;
-          padding-bottom: 56.25%; /* 16:9 aspect ratio */
+          padding-bottom: 56.25%;
           height: 0;
           overflow: hidden;
           max-width: 100%;
-          margin: 0 auto; /* Center the video on desktop */
-          display: block; /* Make sure it's a block element for margin auto to work */
+          margin: 0 auto;
+          display: block;
         }
         .video-responsive iframe {
           position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          border: 0;
-          display: block;
-         }
+          top: 0; left: 0; width: 100%; height: 100%; border: 0; display: block;
+        }
+        .calculator-input:focus { outline: 2px solid #f59e42; }
     </style>
     <script 
      src="https://www.paypal.com/sdk/js?client-id=BAAluzD7bq_O5OzB9ksLPSBHQfwin4Ex_G8S67wy_k0Y3R8T_PdxKiTTWM2C66VrbwFLkLRix8NUv6uogM&components=hosted-buttons&enable-funding=venmo&currency=USD">
@@ -72,49 +60,45 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
     <!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRT4LXHT"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
-
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRT4LXHT"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <!-- Header Section -->
     <header class="gradient-background text-white shadow-lg py-4 px-6 md:px-10 sticky top-0 z-50">
-  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-    <!-- Logo & Site Title -->
-    <a href="#" class="flex items-center space-x-3 text-2xl font-extrabold tracking-tight rounded-md p-2">
-      <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white flex items-center justify-center shadow-md">
-        <img src="affordablesites.png" class="rounded-full" alt="Affordable Sites USA Logo">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <!-- Logo & Site Title -->
+        <a href="#" class="flex items-center space-x-3 text-2xl font-extrabold tracking-tight rounded-md p-2">
+          <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white flex items-center justify-center shadow-md">
+            <img src="affordablesites.png" class="rounded-full" alt="Affordable Sites USA Logo">
+          </div>
+          <span>Affordable Sites USA</span>
+        </a>
+        <!-- Hamburger Menu Button -->
+        <button id="hamburger-btn"
+          class="md:hidden ml-auto text-3xl p-2 rounded focus:outline-none"
+          aria-label="Toggle Navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Navigation Menu -->
+        <nav id="main-nav" class="mt-4 md:mt-0 hidden md:block bg-white text-gray-900 md:bg-transparent md:text-white rounded-lg shadow-lg md:shadow-none transition-all duration-300">
+          <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-lg font-medium">
+            <li><a href="#services" class="hover:text-amber-300 transition duration-300 rounded-md p-2">Services</a></li>
+            <li><a href="#portfolio" class="hover:text-amber-300 transition duration-300 rounded-md p-2">Our Work</a></li>
+            <li><a href="#calculator" class="hover:text-amber-300 transition duration-300 rounded-md p-2">Estimate Calculator</a></li>
+            <li><a href="#about" class="hover:text-amber-300 transition duration-300 rounded-md p-2">About Us</a></li>
+            <li><a href="#contact" class="hover:text-amber-300 transition duration-300 rounded-md p-2">Contact</a></li>
+            <li><a href="#pay" class="hover:text-amber-300 transition duration-300 rounded-md p-2">Pay</a></li>
+          </ul>
+        </nav>
+        <!-- CTA Button in Header -->
+        <div class="mt-4 md:mt-0">
+          <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+            Get a Free Quote
+          </a>
+        </div>
       </div>
-      <span>Affordable Sites USA</span>
-    </a>
-
-    <!-- Hamburger Menu Button (Mobile only) -->
-    <button id="hamburger-btn"
-      class="md:hidden ml-auto text-3xl p-2 rounded focus:outline-none"
-      aria-label="Toggle Navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-
-    <!-- Navigation Menu -->
-    <nav id="main-nav" class="mt-4 md:mt-0 hidden md:block bg-white text-gray-900 md:bg-transparent md:text-white rounded-lg shadow-lg md:shadow-none transition-all duration-300">
-      <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 text-lg font-medium">
-        <li><a href="#services" class="hover:text-amber-300 transition duration-300 rounded-md p-2">Services</a></li>
-        <li><a href="#portfolio" class="hover:text-amber-300 transition duration-300 rounded-md p-2">Our Work</a></li>
-        <li><a href="#about" class="hover:text-amber-300 transition duration-300 rounded-md p-2">About Us</a></li>
-        <li><a href="#contact" class="hover:text-amber-300 transition duration-300 rounded-md p-2">Contact</a></li>
-        <li><a href="#pay" class="hover:text-amber-300 transition duration-300 rounded-md p-2">Pay</a></li>
-      </ul>
-    </nav>
-
-    <!-- CTA Button in Header -->
-    <div class="mt-4 md:mt-0">
-      <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
-        Get a Free Quote
-      </a>
-    </div>
-  </div>
-</header>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero-section py-16 md:py-24 px-6 text-center text-gray-900 shadow-inner">
@@ -123,7 +107,7 @@
                 Grow Your Business Online with Affordable, No-Monthly-Fee Websites
             </h2>
             <p class="text-xl md:text-2xl mb-8 text-gray-700">
-                We build modern, custom, mobile-friendly websites for contractors, pet groomers, trades, and local businesses. Get online affordably – most clients enjoy no monthly fees for their core site!
+                We build modern, custom, mobile-friendly websites for contractors, pet groomers, trades, and local businesses. Get online affordably – most clients enjoy no monthly fees for their core website.
             </p>
             <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-10 rounded-full shadow-xl transition duration-300 transform hover:scale-105 text-lg">
                 Get A Website Quote Now!
@@ -139,20 +123,6 @@
             </iframe>
         </div>
     </section>
-    <!-- Responsive YouTube Embed -->
-
-    <!-- Responsive overview video below the CTA -->
-<!--     <div class="my-8 flex justify-center">
-      <div class="w-full max-w-2xl">
-        <div style="position: relative; padding-bottom: 52.5%; height: 0;">
-          <iframe src="https://www.loom.com/embed/dba1898ed64c4eeea53cce5d855a1246?sid=c1c968be-5604-486f-8f41-840132cbba36"
-            frameborder="0"
-            allowfullscreen
-            style="position: absolute; top:0; left:0; width:100%; height:100%;">
-          </iframe>
-        </div>
-      </div>
-    </div> -->
 
     <div class="container mx-auto p-6 md:p-8">
         <!-- Services Section -->
@@ -185,6 +155,69 @@
                 </div>
             </div>
         </section>
+
+        <!-- Estimate Calculator Section -->
+        <section id="calculator" class="my-16 bg-white rounded-xl shadow-lg p-6 md:p-8">
+          <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Instant Estimate Calculator</h2>
+          <p class="text-center text-lg mb-6 text-gray-700">Save time! Use this calculator to get a quick estimate for your project. (For contractors: you can customize the calculation logic for your trade.)</p>
+          <form id="estimate-form" class="max-w-2xl mx-auto space-y-6">
+            <div>
+              <label class="block mb-2 font-medium text-gray-800" for="serviceType">Service Type</label>
+              <select id="serviceType" name="serviceType" class="calculator-input w-full border rounded-md p-3" required>
+                <option value="">Select a service</option>
+                <option value="cleaning">General Cleaning</option>
+                <option value="repair">Home Repair</option>
+                <option value="painting">Painting</option>
+                <option value="landscaping">Landscaping</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="block mb-2 font-medium text-gray-800" for="squareFeet">Estimated Size (sq. ft.)</label>
+              <input id="squareFeet" name="squareFeet" type="number" min="0" step="1" class="calculator-input w-full border rounded-md p-3" required>
+            </div>
+            <div>
+              <label class="block mb-2 font-medium text-gray-800" for="complexity">Job Complexity</label>
+              <select id="complexity" name="complexity" class="calculator-input w-full border rounded-md p-3" required>
+                <option value="">Select complexity</option>
+                <option value="basic">Basic</option>
+                <option value="standard">Standard</option>
+                <option value="complex">Complex</option>
+              </select>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-lg">
+              Calculate Estimate
+            </button>
+          </form>
+          <div id="estimate-result" class="mt-8 text-center text-2xl font-bold text-green-700"></div>
+        </section>
+        <script>
+          document.getElementById('estimate-form').addEventListener('submit', function(e){
+            e.preventDefault();
+            // Simple logic for demo - adjust rates for your trade!
+            const type = document.getElementById('serviceType').value;
+            const sqft = parseInt(document.getElementById('squareFeet').value, 10) || 0;
+            const complexity = document.getElementById('complexity').value;
+            if (!type || !sqft || !complexity) {
+              document.getElementById('estimate-result').textContent = "Please fill out all fields.";
+              return;
+            }
+            let baseRate = 1.5;
+            switch(type) {
+              case 'cleaning': baseRate = 1.2; break;
+              case 'repair': baseRate = 2.5; break;
+              case 'painting': baseRate = 1.8; break;
+              case 'landscaping': baseRate = 2.0; break;
+              default: baseRate = 1.5;
+            }
+            let complexityMultiplier = 1;
+            if (complexity === 'standard') complexityMultiplier = 1.2;
+            if (complexity === 'complex') complexityMultiplier = 1.5;
+            const estimate = sqft * baseRate * complexityMultiplier;
+            document.getElementById('estimate-result').textContent = 
+              `Estimated Price: $${estimate.toFixed(2)}`;
+          });
+        </script>
 
         <!-- Portfolio Section -->
         <section id="portfolio" class="my-16 bg-white rounded-xl shadow-lg p-6 md:p-8">
@@ -225,7 +258,7 @@
         <section id="about" class="my-16 bg-white rounded-xl shadow-lg p-6 md:p-8 text-center">
             <h2 class="text-3xl font-bold text-gray-900 mb-6">About Affordable Sites USA</h2>
             <p class="text-lg text-gray-700 max-w-2xl mx-auto">
-                We help local businesses stand out online — without the burden of expensive ongoing fees for their core website. With years of experience building for contractors, trades, and service professionals, we provide modern, effective, and affordable web solutions.
+                We help local businesses stand out online — without the burden of expensive ongoing fees for their core website. With years of experience building for contractors, trades, and service providers, we deliver results that get you found online.
             </p>
         </section>
 
@@ -278,7 +311,7 @@
 
     <!-- PayPal Button Section (centered) -->
     <div id="pay">
-    <div id="paypal-container-V3GH5LXXY8A86" class="paypal-button-wrapper"></div>
+      <div id="paypal-container-V3GH5LXXY8A86" class="paypal-button-wrapper"></div>
     </div>
     <script>
       paypal.HostedButtons({
@@ -289,8 +322,8 @@
         .paypal-button-wrapper {
           display: flex;
           justify-content: center;
-          margin-top: 30px; /* space above button */
-          margin-bottom: 30px; /* space below button */
+          margin-top: 30px;
+          margin-bottom: 30px;
         }
     </style>
 
@@ -301,6 +334,7 @@
             <nav class="flex justify-center space-x-6 text-sm">
                 <a href="#services" class="hover:text-amber-400 transition duration-300">Services</a>
                 <a href="#portfolio" class="hover:text-amber-400 transition duration-300">Our Work</a>
+                <a href="#calculator" class="hover:text-amber-400 transition duration-300">Estimate Calculator</a>
                 <a href="#about" class="hover:text-amber-400 transition duration-300">About Us</a>
                 <a href="#contact" class="hover:text-amber-400 transition duration-300">Contact</a>
                 <a href="https://affordablesitesusa.com/termsofservice" class="hover:text-amber-400 transition duration-300">Terms Of Service</a>
@@ -317,26 +351,23 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
             });
         });
+
+        // Hamburger menu functionality
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mainNav = document.getElementById('main-nav');
+        hamburgerBtn.addEventListener('click', () => {
+          mainNav.classList.toggle('hidden');
+        });
+        mainNav.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            if (window.innerWidth < 768) mainNav.classList.add('hidden');
+          });
+        });
     </script>
-    <script>
-  // Hamburger menu functionality
-  const hamburgerBtn = document.getElementById('hamburger-btn');
-  const mainNav = document.getElementById('main-nav');
-  hamburgerBtn.addEventListener('click', () => {
-    mainNav.classList.toggle('hidden');
-  });
-  // Optional: Close menu when a nav link is clicked (on mobile)
-  mainNav.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      if (window.innerWidth < 768) mainNav.classList.add('hidden');
-    });
-  });
-</script>
 </body>
 </html>
