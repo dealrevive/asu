@@ -21,7 +21,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Affordable Sites USA | No Monthly Fee Websites for Small Businesses</title>
-    <meta name="description" content="Affordable Sites USA builds professional, no-monthly-fee websites for small businesses, contractors, and local service providers. Get a mobile-friendly site that handles quotes, bookings, and customer questions 24/7." />
+    <meta name="description" content="Affordable Sites USA builds professional, no-monthly-fee websites for small businesses, contractors, and local service providers. Get a mobile-friendly site that helps you get found.">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -83,14 +83,7 @@
       .calculator-input:focus {
         outline: 2px solid #f59e42;
       }
-      #paypal-button-container {
-        max-width: 400px;
-        margin: 2rem auto;
-      }
     </style>
-
-    <!-- PayPal SDK with buttons -->
-    <script src="https://www.paypal.com/sdk/js?client-id=BAAluzD7bq_O5OzB9ksLPSBHQfwin4Ex_G8S67wy_k0Y3R8T_PdxKiTTWM2C66VrbwFLkLRix8NUv6uogM&currency=USD"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
     <!-- Google Tag Manager (noscript) -->
@@ -468,35 +461,20 @@
       </div>
     </section>
 
-    <!-- PayPal Payment Section -->
-    <section
-      id="paypal"
-      class="bg-white p-8 my-16 rounded-xl shadow-lg max-w-md mx-auto text-center"
-    >
+    <!-- PayPal Payment Section (Updated Hosted Button) -->
+    <section id="paypal" class="bg-white p-8 my-16 rounded-xl shadow-lg max-w-md mx-auto text-center">
       <h2 class="text-2xl font-bold mb-4 text-gray-900">Make a Payment via PayPal</h2>
       <p class="mb-6 text-gray-700">
-        Enter the amount you want to pay, then click the PayPal button below.
+        Pay any amount securely using PayPal or Venmo.
       </p>
-      <label for="paypal-amount" class="block mb-2 text-gray-800 font-semibold text-left">
-        Payment Amount (USD):
-      </label>
-      <input
-        type="number"
-        id="paypal-amount"
-        name="paypal-amount"
-        min="1"
-        step="0.01"
-        placeholder="Enter amount in USD"
-        class="w-full border border-gray-300 rounded-md p-3 mb-6 text-gray-900"
-      />
-      <div id="paypal-button-container"></div>
+      <div id="paypal-container-ZF6NRULEEJWC2"></div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-8 px-6 mt-12">
       <div class="container mx-auto max-w-4xl text-center">
         <p>
-          Contact us anytime: 
+          Contact us anytime:
           <a href="mailto:support@affordablesitesusa.com" class="underline hover:text-amber-400"
             >support@affordablesitesusa.com</a
           >
@@ -507,6 +485,7 @@
       </div>
     </footer>
 
+    <!-- Mobile Menu Script -->
     <script>
       // Hamburger toggle for mobile nav
       const hamburgerBtn = document.getElementById('hamburger-btn');
@@ -516,48 +495,14 @@
       });
     </script>
 
+    <!-- PayPal Hosted Buttons SDK -->
+    <script 
+      src="https://www.paypal.com/sdk/js?client-id=BAAluzD7bq_O5OzB9ksLPSBHQfwin4Ex_G8S67wy_k0Y3R8T_PdxKiTTWM2C66VrbwFLkLRix8NUv6uogM&components=hosted-buttons&enable-funding=venmo&currency=USD">
+    </script>
     <script>
-      // PayPal Buttons integration with custom amount input
-      paypal.Buttons({
-        style: {
-          shape: 'rect',
-          color: 'blue',
-          layout: 'vertical',
-          label: 'paypal',
-        },
-        // On click, check amount value
-        onClick: function(data, actions) {
-          const amount = parseFloat(document.getElementById('paypal-amount').value);
-          if (!amount || amount < 1) {
-            alert('Please enter a valid payment amount of at least $1.00');
-            return actions.reject();
-          }
-          return actions.resolve();
-        },
-        // Create order with the entered amount
-        createOrder: function(data, actions) {
-          const amount = document.getElementById('paypal-amount').value;
-          return actions.order.create({
-            purchase_units: [{
-              amount: {
-                value: amount,
-              },
-            }],
-          });
-        },
-        // Finalize transaction
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-            alert('Payment completed! Thank you, ' + details.payer.name.given_name + '.');
-            // Optionally, clear input
-            document.getElementById('paypal-amount').value = '';
-          });
-        },
-        onError: function(err) {
-          alert('An error occurred with PayPal payment. Please try again.');
-          console.error(err);
-        }
-      }).render('#paypal-button-container');
+      paypal.HostedButtons({
+        hostedButtonId: "ZF6NRULEEJWC2",
+      }).render("#paypal-container-ZF6NRULEEJWC2")
     </script>
 </body>
 </html>
