@@ -63,6 +63,18 @@
           display: flex;
           justify-content: center;
         }
+        .sr-only {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
+
         .video-responsive {
           position: relative;
           padding-bottom: 56.25%;
@@ -96,7 +108,7 @@
           <div class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white flex items-center justify-center shadow-md">
             <img src="affordablesites.png" class="rounded-full" alt="Affordable Sites USA Logo">
           </div>
-          <span>Affordable Sites USA</span>
+          <span class="sr-only">Affordable Sites USA</span>
         </a>
         <!-- Hamburger Menu Button -->
         <button id="hamburger-btn"
