@@ -176,70 +176,7 @@
                     <p><strong>Portfolio & Testimonials:</strong> Showcase your best work and build trust with client reviews.</p>
                 </div>
             </div>
-        </section>
-
-         <!-- Estimate Calculator Section -->
-      <!--  <section id="calculator" class="my-16 bg-white rounded-xl shadow-lg p-6 md:p-8">
-          <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Instant Estimate Calculator</h2>
-          <p class="text-center text-lg mb-6 text-gray-700">Save time On Estimates! (For contractors: we can build you a customized estimate calculator, just let us know what you need)</p>
-          <form id="estimate-form" class="max-w-2xl mx-auto space-y-6">
-            <div>
-              <label class="block mb-2 font-medium text-gray-800" for="serviceType">Service Type</label>
-              <select id="serviceType" name="serviceType" class="calculator-input w-full border rounded-md p-3" required>
-                <option value="">Select a service</option>
-                <option value="cleaning">General Cleaning</option>
-                <option value="repair">Home Repair</option>
-                <option value="painting">Painting</option>
-                <option value="landscaping">Landscaping</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div>
-              <label class="block mb-2 font-medium text-gray-800" for="squareFeet">Estimated Size (sq. ft.)</label>
-              <input id="squareFeet" name="squareFeet" type="number" min="0" step="1" class="calculator-input w-full border rounded-md p-3" required>
-            </div>
-            <div>
-              <label class="block mb-2 font-medium text-gray-800" for="complexity">Job Complexity</label>
-              <select id="complexity" name="complexity" class="calculator-input w-full border rounded-md p-3" required>
-                <option value="">Select complexity</option>
-                <option value="basic">Basic</option>
-                <option value="standard">Standard</option>
-                <option value="complex">Complex</option>
-              </select>
-            </div>
-            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-lg">
-              Calculate Estimate
-            </button>
-          </form>
-          <div id="estimate-result" class="mt-8 text-center text-2xl font-bold text-green-700"></div>
-        </section>
-        <script>
-          document.getElementById('estimate-form').addEventListener('submit', function(e){
-            e.preventDefault();
-            // Simple logic for demo - adjust rates for your trade!
-            const type = document.getElementById('serviceType').value;
-            const sqft = parseInt(document.getElementById('squareFeet').value, 10) || 0;
-            const complexity = document.getElementById('complexity').value;
-            if (!type || !sqft || !complexity) {
-              document.getElementById('estimate-result').textContent = "Please fill out all fields.";
-              return;
-            }
-            let baseRate = 1.5;
-            switch(type) {
-              case 'cleaning': baseRate = 1.2; break;
-              case 'repair': baseRate = 2.5; break;
-              case 'painting': baseRate = 1.8; break;
-              case 'landscaping': baseRate = 2.0; break;
-              default: baseRate = 1.5;
-            }
-            let complexityMultiplier = 1;
-            if (complexity === 'standard') complexityMultiplier = 1.2;
-            if (complexity === 'complex') complexityMultiplier = 1.5;
-            const estimate = sqft * baseRate * complexityMultiplier;
-            document.getElementById('estimate-result').textContent = 
-              `Estimated Price: $${estimate.toFixed(2)}`;
-          });
-        </script> -->
+        </section>      
 
         <!-- Portfolio Section -->
         <section id="portfolio" class="my-16 bg-white rounded-xl shadow-lg p-6 md:p-8">
@@ -284,11 +221,29 @@
 
         <!-- About Section -->
         <section id="about" class="my-16 bg-white rounded-xl shadow-lg p-6 md:p-8 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">About Affordable Sites USA</h2>
-            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
-                We help local businesses stand out online — without the burden of expensive ongoing fees for their core website. With years of experience building for contractors, trades, and service providers, we deliver results that get you found online.
-            </p>
-        </section>
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">About Affordable Sites USA</h2>
+  <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+    At Affordable Sites USA, we build clean, modern websites for small businesses — with <strong>no monthly fees</strong> and no unnecessary add-ons. We serve small business owners across the U.S. — with a strong local presence in <strong>Jacksonville, FL</strong>, plus growing communities in <strong>New Mexico</strong> and <strong>Texas</strong>, among other states.
+    <br><br>
+    Whether you're local to Jacksonville or operating in multiple cities or states, we specialize in lead-generating websites for roofers, plumbers, handymen, and tradespeople that help you get found and trusted online — fast.
+  </p>
+</section>
+
+<section id="who" class="my-16 bg-white rounded-xl shadow-lg p-6 md:p-8 text-center">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Who We Build For</h2>
+  <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
+    We specialize in websites for local service businesses that need a simple, professional site — fast. Whether you serve one neighborhood or multiple cities, our websites help you win more calls and quotes without paying monthly fees.
+  </p>
+  <ul class="text-left max-w-xl mx-auto text-gray-700 text-lg space-y-2">
+    <li>✅ Contractors & Handymen</li>
+    <li>✅ Plumbers & Electricians</li>
+    <li>✅ Roofers & HVAC Techs</li>
+    <li>✅ Landscapers & Lawn Care Pros</li>
+    <li>✅ Cleaners & Mobile Detailers</li>
+    <li>✅ Dog Groomers & Pet Services</li>
+    <li>✅ More Small Local Businesses in Jacksonville, FL, New Mexico, Texas & Beyond!</li>
+  </ul>
+</section>
 
         <!-- Contact Section -->
         <section id="contact" class="my-16 bg-gray-800 text-white rounded-xl shadow-lg p-6 md:p-8">
